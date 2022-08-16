@@ -9,7 +9,7 @@ import {useEffect} from 'react'
 
 function App() {
   useEffect(()=>{
-    hotjar.initialize(hjid, hjsv);
+    hotjar.initialize(3110257, 6);
 
     // Identify the user
     hotjar.identify('USER_ID', { userProperty: 'value' });
