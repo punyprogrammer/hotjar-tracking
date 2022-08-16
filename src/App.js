@@ -9,10 +9,18 @@ import {useEffect} from 'react'
 
 function App() {
   useEffect(()=>{
-   hotjar.initialize(3110257,6)
+    hotjar.initialize(hjid, hjsv);
+
+    // Identify the user
+    hotjar.identify('USER_ID', { userProperty: 'value' });
+    
+    // Add an event
+    hotjar.event('button-click');
+    console.log('hotjar initialized')
+    
   },[])
   return (
-       <div>
+       <div  style={{width:"100vw",height:"100vh",backgroundColor:"cyan"}}> 
         tracker
        </div>
   );
