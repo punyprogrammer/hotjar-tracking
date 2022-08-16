@@ -15,7 +15,8 @@ function App() {
     hotjar.identify('USER_ID', { userProperty: 'value' });
     
     // Add an event
-    hotjar.event('button-click');
+    // hotjar.event('button-click');
+    hotjar.event('user-confused')
     console.log('hotjar initialized')
     
   },[])
