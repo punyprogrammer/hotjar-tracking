@@ -12,10 +12,10 @@ function App() {
     hotjar.initialize(3110257, 6);
 
     // Identify the user
-    hotjar.identify('USER_ID', { userProperty: 'value' });
+    // hotjar.identify('USER_ID', { userProperty: 'value' });
     
     // Add an event
-    hotjar.event('button-click');
+    // hotjar.event('button-click');
     console.log('hotjar initialized')
     
   },[])
